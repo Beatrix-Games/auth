@@ -1,7 +1,8 @@
 function getQueryParam(param) {
-    let params = new URLSearchParams(window.location.search);
+    let url = window.location.href.split('#')[0]; // Split to ignore the fragment part
+    let params = new URLSearchParams(new URL(url).search);
     return params.get(param);
 }
 
-let name = getQueryParam('accesstoken');
+let name = getQueryParam('access_token');
 console.log(name);
