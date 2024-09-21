@@ -1,6 +1,6 @@
 function getQueryParam(param) {
     let url = window.location.href.split('#')[1]; // Split to ignore the fragment part
-    let result = text.replace("access_token=", "");
+    let result = url.replace("access_token=", "");
     return result;
 }
 
