@@ -1,5 +1,4 @@
 var ws = new WebSocket("ws://localhost:47477/");
-connectWebSocket();
 
 function getQueryParam(param) {
     let url = window.location.href.split('#')[1]; // Split to ignore the fragment part
