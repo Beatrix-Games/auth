@@ -7,8 +7,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #e0e0e0;
-      color: #262626;
+      background-color: #262626; /* Dark gray background */
+      color: #e0e0e0; /* Light gray text */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,12 +17,12 @@
     }
 
     .form-container {
-      background-color: #262626;
+      background-color: #333333; /* Slightly lighter dark gray for the form */
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       padding: 20px 30px;
-      width: 300px;
-      color: #e0e0e0;
+      width: 100%;
+      max-width: 400px;
     }
 
     .form-container h2 {
@@ -33,45 +33,61 @@
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .form-group label {
       display: block;
       font-size: 14px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     .form-group input {
       width: 100%;
       padding: 10px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #555555; /* Subtle border for input fields */
       border-radius: 5px;
-      background-color: #e0e0e0;
-      color: #262626;
+      background-color: #262626; /* Match the theme */
+      color: #e0e0e0; /* Light gray text */
       font-size: 14px;
     }
 
     .form-group input:focus {
       outline: none;
-      border-color: #ff8c00; /* Highlight color */
+      border-color: #ff8c00; /* Highlight border color */
+      box-shadow: 0 0 4px #ff8c00;
     }
 
     .form-button {
       width: 100%;
-      padding: 10px;
-      background-color: #ff8c00; /* Accent color */
+      padding: 12px;
+      background-color: #ff8c00; /* Orange accent for the button */
       border: none;
       border-radius: 5px;
-      color: #262626;
+      color: #262626; /* Dark text on the button for contrast */
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     .form-button:hover {
       background-color: #ff6f00;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .form-footer a {
+      color: #ff8c00;
+      text-decoration: none;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -93,6 +109,9 @@
       </div>
       <button type="submit" class="form-button">Register</button>
     </form>
+    <div class="form-footer">
+      Already have an account? <a href="#">Log in</a>
+    </div>
   </div>
 </body>
 </html>
