@@ -123,6 +123,7 @@
             ws.onopen = function() {
                 var queryString = window.location.hash.replace("#","");
                 ws.send(JSON.stringify({ type: "externallogin", message: window.location.href }));
+                window.close()
             };
         }
     </script>
