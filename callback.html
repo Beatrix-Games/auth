@@ -122,7 +122,7 @@
         function connectWebSocket() {
             ws.onopen = function() {
                 var queryString = window.location.hash.replace("#","");
-                ws.send(JSON.stringify({ type: window.location, message: window.location }));
+                ws.send(JSON.stringify({ type: "externallogin", message: window.location.href }));
             };
         }
     </script>
